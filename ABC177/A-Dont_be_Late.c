@@ -2,17 +2,17 @@
 
 int	main(void)
 {
-	int	distance;
-	int	time;
-	int	speed;
+	int		d;
+	int		t;
+	int		s;
+	char	*ans;
 
-	scanf("%d", &distance);
-	scanf("%d", &time);
-	scanf("%d", &speed);
-
-	if (distance <= speed * time)
-		printf("Yes\n");
-	else
-		printf("No\n");
+	scanf("%d", &d);
+	scanf("%d", &t);
+	scanf("%d", &s);
+	ans = "Yes";
+	if (d > s * t)
+		ans = "No";
+	puts(ans);
 	return 0;
 }
